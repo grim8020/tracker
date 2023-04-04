@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:trackit/faq.dart';
 import 'package:trackit/home_screen.dart';
 import 'package:trackit/loading_screen.dart';
 import 'package:trackit/login_and_register_screen.dart';
+import 'package:trackit/messages.dart';
 import 'package:trackit/profile.dart';
+import 'package:trackit/recent_requests.dart';
 import 'package:trackit/schedule.dart';
+import 'package:trackit/settings.dart';
 
 void main() {
   runApp(const TrackIT());
@@ -18,11 +22,15 @@ class TrackIT extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         initialRoute: '/loadingScreen',
         routes: {
-          '/loadingScreen': (context) => LoadingScreen(),
-          '/homeScreen': (context) => HomeScreen(),
-          '/profile': (context) => Profile(),
-          '/loginRegisterScreen': (context) => LoginRegisterScreen(),
-          '/schedule': (context) => Schedule(),
+          '/loadingScreen': (context) => const LoadingScreen(),
+          '/homeScreen': (context) => const HomeScreen(),
+          '/profile': (context) => const Profile(),
+          '/loginRegisterScreen': (context) => const LoginRegisterScreen(),
+          '/schedule': (context) => const Schedule(),
+          '/messages': (context) => const Messages(),
+          '/settings': (context) => const Settings(),
+          '/faq': (context) => const FAQs(),
+          '/recentRequests': (context) => const RecentRequests(),
         });
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trackit/components/back_button.dart';
 import 'package:trackit/components/list_tile_home.dart';
 
 import 'components/customAppBar.dart';
@@ -22,11 +23,15 @@ class _HomeScreenState extends State<HomeScreen> {
       body: SafeArea(
         child: Column(
           children: [
+            CustomBackButton(
+              onPress: () => Navigator.pop(context),
+            ),
             const Padding(
-              padding: EdgeInsets.all(25.0),
+              padding: EdgeInsets.all(30.0),
               child: Text(
                 'Choose a location or specialist:',
-                style: TextStyle(fontSize: 20),
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                textAlign: TextAlign.center,
               ),
             ),
             const Divider(

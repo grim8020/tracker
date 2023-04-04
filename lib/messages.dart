@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'components/back_button.dart';
 import 'components/customAppBar.dart';
 
-class Schedule extends StatelessWidget {
-  const Schedule({Key? key}) : super(key: key);
+class Messages extends StatelessWidget {
+  const Messages({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

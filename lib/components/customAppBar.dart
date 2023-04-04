@@ -25,14 +25,14 @@ class _CustomAppBarState extends State<CustomAppBar> {
             ),
           ),
           IconButton(
-            onPressed: () => null,
+            onPressed: () => Navigator.pushNamed(context, '/homeScreen'),
             icon: Image.asset(
               'assets/images/ITS.png',
             ),
             iconSize: MediaQuery.of(context).size.height * .075,
           ),
           IconButton(
-            onPressed: () => null,
+            onPressed: () => Navigator.pushNamed(context, '/profile'),
             icon: const Icon(Icons.person),
             color: Colors.black,
           ),
@@ -73,27 +73,27 @@ class MenuDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.message),
             title: Text('Messages'),
-            onTap: () => null,
+            onTap: () => Navigator.pushNamed(context, '/messages'),
           ),
           ListTile(
             leading: Icon(Icons.account_circle),
             title: Text('Profile'),
-            onTap: () => null,
+            onTap: () => Navigator.pushNamed(context, '/profile'),
           ),
           ListTile(
             leading: Icon(Icons.question_mark_outlined),
             title: Text('FAQs'),
-            onTap: () => null,
+            onTap: () => Navigator.pushNamed(context, '/faq'),
           ),
           ListTile(
             leading: Icon(Icons.list_alt),
             title: Text('Recent Requests'),
-            onTap: () => null,
+            onTap: () => Navigator.pushNamed(context, '/recentRequests'),
           ),
           ListTile(
             leading: Icon(Icons.settings),
             title: Text('Settings'),
-            onTap: () => null,
+            onTap: () => Navigator.pushNamed(context, '/settings'),
           ),
         ],
       ),

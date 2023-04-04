@@ -18,9 +18,9 @@ class _LoadingScreenState extends State<LoadingScreen> {
   }
 
   void load() async {
-    Timer(Duration(seconds: 3), () {
+    Timer(Duration(seconds: 1), () {
       WidgetsBinding.instance.addPostFrameCallback((_) {
-        Navigator.pushNamed(context, '/homeScreen');
+        Navigator.pushNamed(context, '/loginRegisterScreen');
       });
     });
   }
