@@ -8,6 +8,8 @@ import 'package:trackit/profile.dart';
 import 'package:trackit/recent_requests.dart';
 import 'package:trackit/schedule.dart';
 import 'package:trackit/settings.dart';
+import 'package:trackit/urgent_request.dart';
+import 'package:trackit/urgent_request_confirmation.dart';
 
 void main() {
   runApp(const TrackIT());
@@ -31,6 +33,9 @@ class TrackIT extends StatelessWidget {
           '/settings': (context) => const Settings(),
           '/faq': (context) => const FAQs(),
           '/recentRequests': (context) => const RecentRequests(),
+          '/urgentRequest': (context) => const UrgentRequest(),
+          '/urgentRequestConfirmation': (context) =>
+              const UrgentRequestConfirmation(),
         });
   }
 }
